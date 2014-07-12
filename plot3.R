@@ -20,10 +20,10 @@ plot3 <- function() {
 	par(oma=c(1,1,1,1),bg="white")
 
 	with(hpcdatafilt, { 
-		plot(datetime,Sub_metering_1, type="l" ,xlab="", ylab="Energy sub metering", col="blue")
- 		lines(datetime, Sub_metering_2, col = "dark grey")
-		lines(datetime, Sub_metering_3, col = "red")
-		legend("topright", pch="-", col = c("blue","dark grey","red"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+		plot(datetime,Sub_metering_1, type="l" ,xlab="", ylab="Energy sub metering", col="black")
+ 		lines(datetime, Sub_metering_2, col = "red")
+		lines(datetime, Sub_metering_3, col = "blue")
+		legend("topright", lty=1, col = c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 		}
 	)
 
