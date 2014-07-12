@@ -16,7 +16,7 @@ plot4 <- function() {
 	# check device 
 	if (dev.cur() == 1) dev.new()	
 
-	par(mfrow=c(2,2))
+	par(mfrow=c(2,2),oma=c(1,1,1,1),bg="white")
 
 	with(hpcdatafilt, {
 		plot(datetime,Global_active_power, type="l" ,xlab="", ylab="Global Active Power")

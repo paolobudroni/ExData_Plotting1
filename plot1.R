@@ -18,6 +18,7 @@ plot1 <- function() {
 
 	
 	#step 3 -- Construct plot1
+	par(oma=c(1,1,1,1),bg="white")
 	hist(hpcdatafilt$Global_active_power,col="red",xlab="Global Active Power (kilowatts)",main="Global Active Power")
 
 

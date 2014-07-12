@@ -18,6 +18,7 @@ plot2 <- function() {
 
 	
 	# step 3 -- Construct plot2
+	par(oma=c(1,1,1,1),bg="white")
 	with(hpcdatafilt, plot(datetime,Global_active_power, type="l" ,xlab="", ylab="Global Active Power (kilowatts)"))
 
 	#copy it to PNG file 

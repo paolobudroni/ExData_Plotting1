@@ -17,7 +17,8 @@ plot3 <- function() {
 	if (dev.cur() == 1) dev.new()	
 
 	#step 3 -- Construct plot3
-	
+	par(oma=c(1,1,1,1),bg="white")
+
 	with(hpcdatafilt, { 
 		plot(datetime,Sub_metering_1, type="l" ,xlab="", ylab="Energy sub metering", col="blue")
  		lines(datetime, Sub_metering_2, col = "dark grey")
